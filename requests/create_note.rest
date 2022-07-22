@@ -1,15 +1,12 @@
-POST http://localhost:3001/api/notes
+POST http://localhost:3001/api/phonebook
 Content-Type: application/json
 
 {
-    "content": "VS Code rest client is working",
-    "important": false
+    "name": "Artie Hellas",
+    "number": "207-899-8255"
 }
-###
-POST http://localhost:3001/api/notes/ HTTP/1.1
-content-type: application/json
 
-{
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
-}
+
+###
+
+DELETE http://localhost:3001/api/phonebook/3
